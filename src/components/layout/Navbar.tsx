@@ -31,8 +31,9 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full z-[200] px-4 md:px-8 py-4 md:py-6 flex items-center justify-between backdrop-blur-md md:backdrop-blur-none bg-bg-primary/50 md:bg-transparent"
     >
       <Link to="/" className="text-accent-primary font-display italic text-lg md:text-xl tracking-tighter transition-colors duration-500">
-        {weddingData.couple.groom.charAt(0)}&{weddingData.couple.bride.charAt(0)}
+        {weddingData.couple.groom.replace('Dr. ', '').charAt(0)}&{weddingData.couple.bride.replace('Dr. ', '').charAt(0)}
       </Link>
+
 
       
       <div className="flex items-center gap-4 md:gap-10">

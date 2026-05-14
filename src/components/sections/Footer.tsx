@@ -9,8 +9,9 @@ export default function Footer() {
         {/* Monogram/Initial */}
         <div className="mb-20">
           <span className="text-[12vw] font-display text-accent-primary italic select-none opacity-20 transition-colors duration-500">
-            {weddingData.couple.groom.charAt(0)}{weddingData.couple.bride.charAt(0)}
+            {weddingData.couple.groom.replace('Dr. ', '').charAt(0)}{weddingData.couple.bride.replace('Dr. ', '').charAt(0)}
           </span>
+
 
         </div>
         
