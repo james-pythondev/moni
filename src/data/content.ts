@@ -1,11 +1,12 @@
 export const weddingData = {
   couple: {
-    bride: "Monica",
-    groom: "Angei",
+    bride: "Dr. Monica",
+    groom: "Dr. Angei",
     brideFullName: "Dr. S. Monica",
     groomFullName: "Dr. J. Angei",
     tagline: "Friends became a love",
   },
+
   events: {
     reception: {
       title: "Reception",
