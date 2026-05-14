@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
+import { weddingData } from '../../data/content';
 
 export default function Blessings() {
   const [name, setName] = useState('');
@@ -8,11 +9,13 @@ export default function Blessings() {
 
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneNumber = "9585842193"; // Using the coordinator's number provided
+    // Strip non-numeric characters for WhatsApp link
+    const phoneNumber = weddingData.contact.phone.replace(/\D/g, ''); 
     const text = `Blessing from ${name}: ${message}`;
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, '_blank');
   };
+
 
   return (
     <section className="section-container bg-bg-primary border-t border-border-subtle transition-colors duration-500">

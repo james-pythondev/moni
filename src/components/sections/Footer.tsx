@@ -9,8 +9,9 @@ export default function Footer() {
         {/* Monogram/Initial */}
         <div className="mb-20">
           <span className="text-[12vw] font-display text-accent-primary italic select-none opacity-20 transition-colors duration-500">
-            {weddingData.couple.bride.charAt(0)}{weddingData.couple.groom.charAt(0)}
+            {weddingData.couple.groom.charAt(0)}{weddingData.couple.bride.charAt(0)}
           </span>
+
         </div>
         
         <div className="text-center space-y-12 max-w-2xl">
@@ -35,14 +36,14 @@ export default function Footer() {
 
           {/* Developer Credit - Signature Style */}
           <div className="mt-24 pt-12 border-t border-border-subtle w-full">
-            <p className="text-[10px] uppercase tracking-[0.6em] text-accent-secondary opacity-40 font-light group transition-all duration-700">
-              Crafted with absolute precision by 
+            <div className="text-[10px] uppercase tracking-[0.6em] text-accent-secondary font-light group transition-all duration-700">
+              <span className="opacity-40">Crafted with absolute precision by</span>
               <br className="md:hidden" />
               <a 
                 href="https://portfolio-blue-nu-31.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="signature-link italic lowercase tracking-normal text-accent-primary text-3xl ml-3 transition-all duration-500 hover:scale-105 hover:opacity-100 hover:text-accent-primary inline-flex items-center relative pb-1 group/link"
+                className="signature-link italic lowercase tracking-normal text-accent-primary text-3xl ml-3 transition-all duration-500 hover:scale-105 inline-flex items-center relative pb-1 group/link"
               >
                 James Andrew
                 <motion.span
@@ -53,10 +54,12 @@ export default function Footer() {
                   <ExternalLink className="w-4 h-4 opacity-40 group-hover/link:opacity-100 transition-opacity" />
                 </motion.span>
                 {/* Permanent subtle underline */}
-                <div className="absolute bottom-0 left-0 w-full h-px bg-accent-primary/20 group-hover/link:bg-accent-primary transition-colors" />
+                <div className="absolute bottom-0 left-0 w-full h-px bg-accent-primary transition-colors" />
               </a>
-            </p>
+            </div>
           </div>
+
+
         </div>
       </div>
 

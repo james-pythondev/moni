@@ -17,7 +17,7 @@ export default function OurStory() {
           </span>
           
           <h2 className="text-4xl md:text-6xl font-display text-accent-primary mb-16 leading-tight italic transition-colors duration-500">
-            "Introduced by family, connected by choice."
+            "Blessed by God, United in Love."
           </h2>
           
           <div className="relative">
@@ -26,6 +26,22 @@ export default function OurStory() {
               {weddingData.story.content}
             </p>
           </div>
+
+          {weddingData.bibleVerse && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 1.5 }}
+              className="mt-16 text-center md:text-right"
+            >
+              <p className="text-accent-primary font-display italic text-xl md:text-2xl mb-2 opacity-80 transition-colors duration-500">
+                "{weddingData.bibleVerse.text}"
+              </p>
+              <p className="text-accent-secondary uppercase tracking-widest text-[10px] opacity-60">
+                — {weddingData.bibleVerse.reference}
+              </p>
+            </motion.div>
+          )}
           
           <motion.div 
             initial={{ width: 0 }}
@@ -39,3 +55,4 @@ export default function OurStory() {
     </section>
   );
 }
+

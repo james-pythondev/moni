@@ -2,14 +2,16 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { weddingData } from '../../data/content';
 
 export default function Navbar() {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') || 'dark';
+      return localStorage.getItem('theme') || 'light';
     }
-    return 'dark';
+    return 'light';
   });
+
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -28,7 +30,10 @@ export default function Navbar() {
       transition={{ duration: 1, ease: "easeOut", delay: 2.5 }}
       className="fixed top-0 left-0 w-full z-[200] px-4 md:px-8 py-4 md:py-6 flex items-center justify-between backdrop-blur-md md:backdrop-blur-none bg-bg-primary/50 md:bg-transparent"
     >
-      <Link to="/" className="text-accent-primary font-display italic text-lg md:text-xl tracking-tighter transition-colors duration-500">C&S</Link>
+      <Link to="/" className="text-accent-primary font-display italic text-lg md:text-xl tracking-tighter transition-colors duration-500">
+        {weddingData.couple.groom.charAt(0)}&{weddingData.couple.bride.charAt(0)}
+      </Link>
+
       
       <div className="flex items-center gap-4 md:gap-10">
         <Link to="/" className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-accent-secondary hover:text-accent-primary transition-colors duration-500">Invitation</Link>
@@ -60,3 +65,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+

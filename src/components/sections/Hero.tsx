@@ -37,10 +37,11 @@ export default function Hero() {
               </p>
               
               <h1 className="text-4xl md:text-9xl font-display text-accent-primary mb-16 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 transition-colors duration-500">
-                <span>{weddingData.couple.bride}</span>
-                <span className="text-2xl md:text-4xl font-sans italic opacity-20">&</span>
                 <span>{weddingData.couple.groom}</span>
+                <span className="text-2xl md:text-4xl font-sans italic opacity-20">&</span>
+                <span>{weddingData.couple.bride}</span>
               </h1>
+
               
               <div className="flex flex-col items-center space-y-4">
                 <motion.div 
@@ -52,18 +53,18 @@ export default function Hero() {
                 
                 <div className="space-y-4 text-center">
                   <p className="text-lg md:text-2xl font-bold tracking-[0.2em] text-accent-primary uppercase transition-colors duration-500 flex flex-col md:flex-row md:gap-3 items-center justify-center">
-                    <span>Reception on</span>
-                    <span>{weddingData.events.reception.date.toUpperCase()}</span>
-                  </p>
-                  <p className="text-sm md:text-base font-semibold uppercase tracking-[0.3em] text-accent-secondary transition-colors duration-500 flex flex-col md:flex-row md:gap-2 items-center justify-center">
-                    <span>Followed by marriage on</span>
+                    <span>Marriage on</span>
                     <span className="flex flex-col md:flex-row md:gap-2 items-center">
                       <span>{weddingData.events.marriage.date.toUpperCase()}</span>
                       <span className="hidden md:inline">@</span>
                       <span>{weddingData.events.marriage.time}</span>
                     </span>
                   </p>
+                  <p className="text-sm md:text-base font-semibold uppercase tracking-[0.3em] text-accent-secondary transition-colors duration-500 flex flex-col md:flex-row md:gap-2 items-center justify-center">
+                    <span>Followed by reception</span>
+                  </p>
                 </div>
+
               </div>
             </motion.div>
 
