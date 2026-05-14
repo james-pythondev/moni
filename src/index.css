@@ -2,18 +2,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent-primary: #000000;
-  --color-accent-secondary: #4b5563;
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f9fafb;
+  --color-accent-primary: #2D3436;
+  --color-accent-secondary: #B38B8F;
+  --color-bg-primary: #FCF6F7;
+  --color-bg-secondary: #F7EBED;
   
-  --color-glass-border: rgba(0, 0, 0, 0.1);
-  --color-glass-bg: rgba(0, 0, 0, 0.03);
-  --color-border-subtle: rgba(0, 0, 0, 0.1);
-  --color-overlay-bg: rgba(255, 255, 255, 0.4);
+  --color-glass-border: rgba(179, 139, 143, 0.15);
+  --color-glass-bg: rgba(255, 255, 255, 0.4);
+  --color-border-subtle: rgba(179, 139, 143, 0.2);
+  --color-overlay-bg: rgba(252, 246, 247, 0.6);
 
   --font-display: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
+
 
   --animate-reveal: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
   --animate-fade-up: fadeUp 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
