@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent-primary: #2D3436;
-  --color-accent-secondary: #B38B8F;
-  --color-bg-primary: #FCF6F7;
-  --color-bg-secondary: #F7EBED;
+  --color-accent-primary: #3D2B56;
+  --color-accent-secondary: #8E7CAF;
+  --color-bg-primary: #FBFAFF;
+  --color-bg-secondary: #F4F1F9;
   
-  --color-glass-border: rgba(179, 139, 143, 0.15);
+  --color-glass-border: rgba(142, 124, 175, 0.15);
   --color-glass-bg: rgba(255, 255, 255, 0.4);
-  --color-border-subtle: rgba(179, 139, 143, 0.2);
-  --color-overlay-bg: rgba(252, 246, 247, 0.6);
+  --color-border-subtle: rgba(142, 124, 175, 0.1);
+  --color-overlay-bg: rgba(251, 250, 255, 0.6);
 
   --font-display: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
@@ -30,14 +30,14 @@
 }
 
 :root[data-theme='dark'] {
-  --color-accent-primary: #FFFFFF;
-  --color-accent-secondary: #A1A1AA;
-  --color-bg-primary: #000000;
-  --color-bg-secondary: #0A0A0A;
-  --color-glass-border: rgba(255, 255, 255, 0.05);
-  --color-glass-bg: rgba(255, 255, 255, 0.02);
-  --color-border-subtle: rgba(255, 255, 255, 0.1);
-  --color-overlay-bg: rgba(0, 0, 0, 0.4);
+  --color-accent-primary: #E0D7FF;
+  --color-accent-secondary: #A29BFE;
+  --color-bg-primary: #1A1625;
+  --color-bg-secondary: #241E30;
+  --color-glass-border: rgba(224, 215, 255, 0.1);
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-border-subtle: rgba(224, 215, 255, 0.05);
+  --color-overlay-bg: rgba(26, 22, 37, 0.4);
 }
 
 
